@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="24dp">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/foot_img"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:id="@+id/foot_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="名字"
+            android:textSize="10sp"
+            app:layout_constraintTop_toBottomOf="@id/foot_img" />
+
+        <TextView
+            android:id="@+id/foot_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="价格"
+            android:textColor="#ff1616"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@id/foot_count" />
+
+        <TextView
+            android:id="@+id/foot_liulan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="浏览次数"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/foot_money"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="30dp"
+            />
+
+        <TextView
+            android:id="@+id/myfootprint_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="日期"
+            android:textSize="10sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/foot_liulan"
+            android:layout_marginRight="40dp"
+            />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

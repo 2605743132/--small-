@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/car_re"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:background="#FFECEBEB"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <CheckBox
+            android:id="@+id/box_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+
+            android:text="全选"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="合计:" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="￥总价"
+            android:textColor="#ff0000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="118dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="#ff5e70"
+                android:gravity="center"
+                android:text="去结算"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

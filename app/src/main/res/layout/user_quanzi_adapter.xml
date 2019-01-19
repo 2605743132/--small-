@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/shape_radio1"
+    android:padding="5dp"
+    android:layout_height="wrap_content"
+
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal">
+    <RadioButton
+        android:id="@+id/user_quanzi_adapter_radiobutton"
+        android:layout_width="wrap_content"
+        android:background="#f0f"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_quanzi_adapter_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#181817"
+            android:text="Nihao" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/user_quanzi_adapter_image"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="200dp"
+            fresco:placeholderImage="@drawable/commom_icon_comment_n_hdpi" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/user_quanzi_adapter_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#181817"
+                android:text="日期" />
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/user_quanzi_adapter_num"
+                fresco:placeholderImage="@drawable/dianzan" />
+
+
+            <TextView
+                android:id="@+id/user_quanzi_adapter_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#181817"
+                android:textSize="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:text="1" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

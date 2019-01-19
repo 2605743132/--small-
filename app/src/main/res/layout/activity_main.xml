@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/phone1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="30dp"
+        android:layout_marginTop="140dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/login_icon_phone_n" />
+    <ImageView
+        android:id="@+id/log"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="234dp"
+        android:src="@drawable/login_icon_lock_n" />
+    <ImageView
+        android:id="@+id/show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+          android:layout_marginRight="30dp"
+        android:layout_marginTop="245dp"
+        android:src="@drawable/login_icon_eye_n" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="179dp"
+        android:background="#fff" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="273dp"
+        android:background="#fff" />
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:layout_marginTop="130dp"
+        android:background="@null"
+        android:hint="手机号"
+        android:layout_toRightOf="@+id/phone1"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/margin_10dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="220dp"
+        android:layout_toLeftOf="@+id/show"
+        android:layout_toRightOf="@+id/log"
+        android:background="@null"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:layout_marginTop="300dp">
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="记住密码"
+            android:textColor="#fff"
+            android:textColorHint="#fff"
+            android:textSize="15dp"
+            android:theme="@style/MyCheckBox" />
+        <TextView
+            android:id="@+id/register_jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="快速注册"
+            android:textColor="#fff"
+            android:textSize="15dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/login_bt"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="140dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/login_bt_bj"
+        android:text="登录"
+        android:textColor="#FFFE5B52"
+        android:textSize="20dp" />
+</RelativeLayout>

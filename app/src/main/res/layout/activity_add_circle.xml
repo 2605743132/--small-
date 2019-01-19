@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topic_add_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:minHeight="600dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        style="@style/title_bar_style">
+
+        <ImageView
+            android:id="@+id/back"
+            style="@style/back_btn_style"
+            android:src="@drawable/btn_close" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="发布圈子"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/send"
+            style="@style/btn_ok_style"
+            android:src="@drawable/btn_send" />
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/bo_text"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint="说点什么吧..."
+        android:maxLength="140"
+        android:padding="15dp"
+        android:textColor="@color/commdity_text_color"
+        android:textColorHint="@color/commdity_text_color"
+        android:textSize="16sp"></EditText>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/bo_image_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bo_text"
+        android:layout_alignParentLeft="true"></android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

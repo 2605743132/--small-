@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/mshape">
+
+        <TextView
+            android:id="@+id/grecy_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="订单号"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="12dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/grecy_crecy"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="8"
+            app:layout_constraintTop_toBottomOf="@id/grecy_order"></android.support.v7.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/grecy_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="35dp"
+            android:text="共2件商品，需支付"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grecy_crecy" />
+
+        <TextView
+            android:id="@+id/grecy_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"
+            android:textColor="#f00"
+            app:layout_constraintLeft_toRightOf="@id/grecy_count"
+            app:layout_constraintTop_toTopOf="@id/grecy_count" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:text="元"
+            app:layout_constraintLeft_toRightOf="@id/grecy_money"
+            app:layout_constraintTop_toTopOf="@id/grecy_money" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#f2f2f2"
+            android:text="取消订单"
+            android:textColor="#666666"
+            android:textSize="14sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grecy_money" />
+
+
+        />
+
+        <Button
+
+            android:id="@+id/grecy_topay"
+            android:layout_width="70dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#ff5757"
+            android:text="去支付"
+            android:textColor="#ffffff"
+
+            android:textSize="14sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/grecy_money" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>

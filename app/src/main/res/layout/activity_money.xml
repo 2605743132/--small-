@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MoneyActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="30dp"
+
+            android:src="@drawable/groupppp" />
+
+        <RelativeLayout
+            android:layout_marginTop="-50dp"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="消费金额"
+                    android:textColor="#282728" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="8dp"
+                    android:background="#121112" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="消费金额"
+
+                    android:textColor="#282728" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="50dp"
+                android:id="@+id/usermoney_recy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="余额"
+
+        android:textColor="#121012"
+        android:id="@+id/user_money_yu_e"
+        android:textSize="32dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="70dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+
+        android:textColor="#121012"
+        android:layout_below="@+id/user_money_yu_e"
+        android:id="@+id/user_money_num"
+        android:textSize="50dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

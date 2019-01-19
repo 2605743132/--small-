@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowActivity">
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/rgHome"
+        android:layout_alignParentBottom="true">
+
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/rgHome"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rectangle"
+        android:layout_height="90dp">
+
+        <RadioButton
+            android:id="@+id/rbHome"
+
+            android:checked="true"
+            style="@style/main_bottom_btn_style"
+            android:drawableTop="@drawable/panduan"/>
+        <RadioButton
+            android:id="@+id/rbCatagory"
+            style="@style/main_bottom_btn_style"
+            android:drawableTop="@drawable/caagory"/>
+        <RadioButton
+            android:id="@+id/rbShopcart"
+            style="@style/main_bottom_btn_style"
+            android:layout_marginTop="10dp"
+            android:drawableTop="@drawable/shopcart"/>
+        <RadioButton
+            android:id="@+id/rbding"
+            style="@style/main_bottom_btn_style"
+            android:drawableTop="@drawable/ding"/>
+        <RadioButton
+            android:id="@+id/rbMine"
+            style="@style/main_bottom_btn_style"
+            android:drawableTop="@drawable/mine"/>
+    </RadioGroup>
+
+</RelativeLayout>

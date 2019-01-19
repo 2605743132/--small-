@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SearchActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/common_nav_btn_menu_n" />
+
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/fillet"
+            android:hint="请输入您想要的宝贝"
+            android:padding="5dp"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/common_nav_btn_search_n" />
+
+
+    </LinearLayout>
+    <!--顶部-->
+    <LinearLayout
+        android:id="@+id/cangl"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<com.jcodecraeer.xrecyclerview.XRecyclerView
+    android:id="@+id/search_re"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/linse"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:src="@drawable/nopr"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            />
+
+        <TextView
+            android:textSize="24sp"
+            android:text="抱歉，没有该商品呢！"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

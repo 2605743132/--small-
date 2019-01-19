@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:layout_margin="15dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/ImMl"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:id="@+id/TvMlName"
+            android:text="1231321"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/ImMl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/TvMlPrice"
+            android:text="afdad"
+            android:layout_below="@+id/TvMlName"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="18dp"
+            android:textColor="#ff0336"
+            android:textSize="18sp"
+            android:layout_toRightOf="@+id/ImMl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

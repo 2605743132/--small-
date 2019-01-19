@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:fillViewport="true">
+
+   <!--最外面-->
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+      <!--顶部-->
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+         <ImageButton
+             android:id="@+id/home_page_img_menu"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:src="@drawable/common_nav_btn_menu_n" />
+
+         <TextView
+             android:id="@+id/home_page_edit_search"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_weight="1"
+             android:background="@drawable/fillet"
+             android:hint="请输入您想要的宝贝"
+             android:padding="5dp"
+             android:textSize="15sp" />
+
+         <ImageButton
+             android:id="@+id/home_page_img_search"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10dp"
+             android:layout_marginTop="15dp"
+             android:layout_marginRight="10dp"
+             android:background="@drawable/common_nav_btn_search_n" />
+
+
+      </LinearLayout>
+      <!--顶部-->
+
+      <!--滚动布局-->
+
+      <ScrollView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+            <!--banner图高度固定-->
+            <com.zhouwei.mzbanner.MZBannerView
+                android:id="@+id/home_page_banner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                app:open_mz_mode="true"
+                app:canLoop="true"
+                app:indicatorAlign="center"
+                app:indicatorPaddingLeft="10dp"
+
+
+           />
+            <!--热销新品-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bitmap"
+               >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="热销新品"
+                   android:textColor="#ff7f57"
+                   android:textSize="16sp" />
+
+               <ImageView
+                   android:id="@+id/home_page_img_more_yellow"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_alignParentRight="true"
+                   android:src="@drawable/home_btn_moer_pink_n" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_page_hot_sale_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"></android.support.v7.widget.RecyclerView>
+            <!--热销新品-->
+
+            <!--魔力时尚-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bitmap1"
+               >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:layout_weight="1"
+                   android:gravity="center"
+                   android:text="魔力时尚"
+                   android:textColor="#8D8FF7"
+                   android:textSize="16sp" />
+
+               <ImageView
+                   android:id="@+id/home_page_img_more_purple"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="15dp"
+                   android:src="@drawable/home_btn_more_purple_n" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_page_magic_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+            <!--魔力时尚-->
+
+            <!--品质生活-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bitmap2"
+             >
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:gravity="center_horizontal"
+                   android:text="品质生活"
+                   android:textColor="#FF6475"
+                   android:textSize="16sp" />
+
+               <ImageView
+                   android:id="@+id/home_page_img_more_pink"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="15dp"
+                   android:layout_alignParentRight="true"
+                   android:src="@drawable/home_btn_moer_pink_n" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/home_page_q_life_goods"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+
+         </LinearLayout>
+         <!--品质生活-->
+
+
+      </ScrollView>
+      <!--滚动布局-->
+
+
+   </LinearLayout>
+</LinearLayout>

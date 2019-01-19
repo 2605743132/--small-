@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.AddUserAddressActivity">
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/addressrecy"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+        
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/user_address_jia"
+            android:text="新增收货地址"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+   >
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/odgroup"
+            android:background="@drawable/mshape"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_order_all_list"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/common_icon_alllist_n"
+                android:gravity="center_horizontal"
+                android:text="全部订单"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_order_pay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/common_icon_pay_n"
+                android:gravity="center_horizontal"
+                android:text="待付款"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_order_receiver"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/common_icon_receive_n"
+                android:gravity="center_horizontal"
+                android:text="待收货"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_order_comment"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/commom_icon_comment_n"
+                android:gravity="center_horizontal"
+                android:text="待评价"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/rb_order_finish"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/common_icon_finish_n"
+                android:gravity="center_horizontal"
+                android:text="已完成"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+
+        </RadioGroup>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/order_view_page"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+
+            android:layout_weight="9"
+          ></android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
